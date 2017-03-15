@@ -6,7 +6,7 @@ def simple_random_walk_1d(steps, starting_position=0):
 
     Arguments:
         steps (int): number of steps
-        starting_position: where does the walker starts
+        starting_position(float or int): where does the walker starts
 
     Returns:
         List of 1d coordinates
@@ -23,7 +23,7 @@ def simple_random_walk_1d(steps, starting_position=0):
 
 def random_walk_1d(steps, starting_position=0.0, up_ratio=0.5, step_size=1.0):
     """
-    Parametrable random walk in 1 dimension (up/down)
+    Customizable random walk in 1 dimension (up/down)
 
     Arguments:
         steps (int): number of steps
@@ -34,7 +34,7 @@ def random_walk_1d(steps, starting_position=0.0, up_ratio=0.5, step_size=1.0):
             [step_size[0], step_size[1]]
 
     Returns:
-        List of 1d coordinates
+        List of #steps 1d coordinates
     """
     pos = starting_position
     values = [starting_position]
